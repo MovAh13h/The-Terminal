@@ -1,0 +1,73 @@
+@echo off
+
+cls
+color 02 
+echo Welcome to the Terminal
+echo Developed by Satan
+
+:start
+set /p input=Command:: 
+
+if "%input%"=="matrix_lim" (Goto matrix)
+if "%input%"=="matrix_inf" (Goto mat)
+if "%input%"=="help" (Goto help)
+if "%input%"=="netstat" (Goto ipconfig)
+if "%input%"=="dirtree" (Goto tree)
+if "%input%"=="feedback" (Goto feed)
+if "%input%"=="cmd" (Goto cmd)
+if "%input%"=="bye" (Goto bye)
+if "%input%"=="clear" (Goto cls)
+
+:cls
+cls
+goto start
+
+:bye
+exit
+
+:feed
+echo E-Mail:- tanishqjain1002@gmail.com
+echo Please give a feedback so that I can make
+echo improvements in The Terminal
+echo Lead Programmer - Tanishq
+goto start
+
+:cmd
+start
+goto start
+
+:mat
+echo %random% %random% %random% %random% %random%
+goto mat
+
+:matrix
+FOR %%A IN (1 2 3) DO (
+	call :print_matrix
+)
+goto start
+
+:help
+echo Available Commands:-
+echo 1)matrix_lim - Starts a Matrix with 3 rows and columns
+echo 2)help - Displays help
+echo 3)netstat - Displays your IPv4,IPv6,etc.
+echo 4)dirtree - Shows all the directories in a tree map
+echo 5)clear - Clears screen
+echo 6)feedback - Feedback
+echo 7)matrix_inf - Start a Matrix with no end
+echo 8)cmd - Starts Command Prompt
+echo 9)bye - Exit
+goto start
+
+:ipconfig
+ipconfig /all
+goto start 
+
+
+:print_matrix
+echo %random% %random% %random% %random%
+exit /b
+
+:tree
+tree
+goto start
