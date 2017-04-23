@@ -1,2 +1,1 @@
-WARLOCK
-=======
+Save as Batch File and run
