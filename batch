@@ -2,8 +2,6 @@
 
 cls
 color 02 
-echo Welcome to the Terminal
-echo Developed by Satan
 
 :start
 set /p input=Command:: 
@@ -27,9 +25,6 @@ exit
 
 :feed
 echo E-Mail:- tanishqjain1002@gmail.com
-echo Please give a feedback so that I can make
-echo improvements in The Terminal
-echo Lead Programmer - Tanishq
 goto start
 
 :cmd
